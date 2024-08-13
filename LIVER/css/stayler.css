@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+}
+header{
+    padding-top: 20px;
+    width: 100%;
+    min-height: 8vh;   
+    color: white;
+    justify-content: space-around;
+    background-color: rgb(13, 13, 172);
+    display: flex;
+}
+
+.Dementr{
+    font-size: 25px;
+}
+.header--items__item{
+    padding-right: 15px;
+    font-size: 20px
+}
+.allSections{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    padding: 30px;
+    min-height: 80vh;    
+}
+
+footer{
+    position: fixed;
+    bottom: 0  ;
+    width: 100%;
+    font-size: 22px;
+    height: 50px;
+}
+
+@media(max-width:760px){
+    .allSections{
+        flex-wrap: wrap;
+    }
+    .allSection2{
+        width: 40%;
+    }
+    .allSections--section2{
+         width: 60%;
+    }
+    .allSections--section3{
+         width: 100%;
+    }
+}
+@media(max-width:600px){
+    .allSections{
+        flex-wrap: wrap;
+    }
+    .allSection2{
+         width: 100%;
+         display: block;
+    }
+    .header--items__item{
+         display: none;
+    }
+    footer{
+         font-size: 25%;
+    }
+    .allSections--section3{
+        width: 100%;
+    }
+}
+
+.allSections--section1, .allSections--section3{
+    width: 25%;
+}
+.allSections--section3{
+    height: 400px;
+}
+.allSections--section1, .allSections--section3, footer{
+    color: rgb(228, 228, 228);
+}
+.allSections--section1__items, .allSections--section3, footer{
+    background-color: rgb(29, 29, 165);
+}
+.allSections--section1__items{
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px 15px 0 ;
+}
+.allSections--section2{
+    width: 60%;
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.allSections--section3, footer{
+    text-align: center;
+}
+.allSections--section3__name{
+    font-size: 25px;
+}
+.allSections--section2 h1{
+    color:rgb(22, 22, 165);
+}
+.allSection2{
+    display: flex;
+}
+
+
+/*.header--items{
+    content: url(../css/stayler.css);
+}
